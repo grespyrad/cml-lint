@@ -1,0 +1,1361 @@
+{
+  "reference": "Context Mapper CLI 6.12.0",
+  "files": 55,
+  "matches": 55,
+  "rows": [
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-01-Split-Aggregate-by-Entities/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-01-Split-Aggregate-by-Entities/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-01-Split-Aggregate-by-Entities/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-01-Split-Aggregate-by-Entities/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-output.cml",
+            "line": 20,
+            "column": 4,
+            "offset": 611
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-output.cml",
+            "line": 19,
+            "column": 4,
+            "offset": 654
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-output.cml",
+            "line": 36,
+            "column": 4,
+            "offset": 1093
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-output.cml",
+            "line": 56,
+            "column": 4,
+            "offset": 1275
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-06-Merge-Aggregates/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-06-Merge-Aggregates/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-06-Merge-Aggregates/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-06-Merge-Aggregates/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-07-Merge-Bounded-Contexts/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-07-Merge-Bounded-Contexts/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-07-Merge-Bounded-Contexts/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-07-Merge-Bounded-Contexts/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-output.cml",
+            "line": 70,
+            "column": 4,
+            "offset": 1828
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-a.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-a.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-b.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-b.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-c.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-c.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-10-Change-Shared-Kernel-To-Partnership/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-10-Change-Shared-Kernel-To-Partnership/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-10-Change-Shared-Kernel-To-Partnership/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-10-Change-Shared-Kernel-To-Partnership/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-11-Change-Partnership-To-Shared-Kernel/example-input.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-11-Change-Partnership-To-Shared-Kernel/example-input.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-11-Change-Partnership-To-Shared-Kernel/example-output.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/architectural-refactorings/AR-11-Change-Partnership-To-Shared-Kernel/example-output.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/bounded-context-canvas-example/Bounded-Context-Canvas-Example-Stage-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/bounded-context-canvas-example/Bounded-Context-Canvas-Example-Stage-1.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-1.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-2.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-3.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml",
+            "line": 56,
+            "column": 3,
+            "offset": 1848
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml",
+            "line": 121,
+            "column": 4,
+            "offset": 3547
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml",
+            "line": 122,
+            "column": 4,
+            "offset": 3580
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml",
+            "line": 142,
+            "column": 3,
+            "offset": 4260
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-sample/DDD-Sample-Stage-1.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-sample/DDD-Sample-Stage-2.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-sample/DDD-Sample-Stage-3.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-sample/DDD-Sample-Stage-4.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-sample/DDD-Sample-Stage-5.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample_Alternative-Relationship-Syntax.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-sample/DDD-Sample_Alternative-Relationship-Syntax.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ddd-service-cutting-sample/DDD-Sample.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ddd-service-cutting-sample/DDD-Sample.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example-Stage-1.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example-Stage-2.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example-Stage-3.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example-Stage-4.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-5.cml",
+            "line": 202,
+            "column": 4,
+            "offset": 4340
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example-Stage-5.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example_Alternative-Relationship-Syntax.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example_Alternative-Relationship-Syntax.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example_Team-Map.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/insurance-example/Insurance-Example_Team-Map.cml",
+            "line": 162,
+            "column": 4,
+            "offset": 4275
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/insurance-example/Insurance-Example_Team-Map.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 72,
+            "column": 4,
+            "offset": 2130
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 200,
+            "column": 3,
+            "offset": 5666
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 212,
+            "column": 3,
+            "offset": 6213
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "reference-notation",
+          "message": "Use - for a domain object reference",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 221,
+            "column": 4,
+            "offset": 6632
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 225,
+            "column": 3,
+            "offset": 6818
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 250,
+            "column": 3,
+            "offset": 7636
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 280,
+            "column": 3,
+            "offset": 8708
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "reference-notation",
+          "message": "Use - for a domain object reference",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 324,
+            "column": 4,
+            "offset": 10516
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "reference-notation",
+          "message": "Use - for a domain object reference",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 330,
+            "column": 4,
+            "offset": 10643
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 346,
+            "column": 3,
+            "offset": 11502
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 360,
+            "column": 3,
+            "offset": 12136
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 371,
+            "column": 3,
+            "offset": 12541
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 383,
+            "column": 3,
+            "offset": 12990
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 418,
+            "column": 3,
+            "offset": 14749
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "reference-notation",
+          "message": "Use - for a domain object reference",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 444,
+            "column": 4,
+            "offset": 15916
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "name-case",
+          "message": "Name should begin with an upper case letter",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 471,
+            "column": 3,
+            "offset": 17224
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 489,
+            "column": 3,
+            "offset": 18029
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "reference-notation",
+          "message": "Use - for a domain object reference",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 516,
+            "column": 4,
+            "offset": 19056
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 545,
+            "column": 3,
+            "offset": 19938
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 550,
+            "column": 4,
+            "offset": 20075
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 554,
+            "column": 4,
+            "offset": 20171
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 591,
+            "column": 3,
+            "offset": 21167
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 598,
+            "column": 4,
+            "offset": 21268
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 629,
+            "column": 3,
+            "offset": 22087
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+            "line": 633,
+            "column": 4,
+            "offset": 22176
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/lakeside-mutual/LakesideMutual.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/lakeside-mutual/QuoteRequestFlow.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/lakeside-mutual/QuoteRequestFlow.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 16,
+            "column": 3,
+            "offset": 1010
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 19,
+            "column": 3,
+            "offset": 1080
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 41,
+            "column": 3,
+            "offset": 2195
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 44,
+            "column": 3,
+            "offset": 2277
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 47,
+            "column": 3,
+            "offset": 2341
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 50,
+            "column": 3,
+            "offset": 2387
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 74,
+            "column": 3,
+            "offset": 3722
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 77,
+            "column": 3,
+            "offset": 3810
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 80,
+            "column": 3,
+            "offset": 3877
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 83,
+            "column": 3,
+            "offset": 3920
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 86,
+            "column": 3,
+            "offset": 3999
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 96,
+            "column": 3,
+            "offset": 4361
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 97,
+            "column": 3,
+            "offset": 4386
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 108,
+            "column": 3,
+            "offset": 4919
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 109,
+            "column": 3,
+            "offset": 4948
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 110,
+            "column": 3,
+            "offset": 4971
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 111,
+            "column": 3,
+            "offset": 4988
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 124,
+            "column": 3,
+            "offset": 5571
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 125,
+            "column": 3,
+            "offset": 5602
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 126,
+            "column": 3,
+            "offset": 5626
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 127,
+            "column": 3,
+            "offset": 5642
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+            "line": 128,
+            "column": 3,
+            "offset": 5670
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/lakeside-mutual/ooad-example.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/microservice-generation/JDL-example/insurance-example-for-JDL-generation.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/upstream/microservice-generation/JDL-example/insurance-example-for-JDL-generation.cml",
+            "line": 204,
+            "column": 4,
+            "offset": 4573
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/microservice-generation/JDL-example/insurance-example-for-JDL-generation.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 25,
+            "column": 3,
+            "offset": 1246
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 30,
+            "column": 4,
+            "offset": 1343
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 32,
+            "column": 3,
+            "offset": 1363
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 36,
+            "column": 4,
+            "offset": 1437
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 38,
+            "column": 3,
+            "offset": 1464
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 40,
+            "column": 4,
+            "offset": 1510
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 42,
+            "column": 3,
+            "offset": 1540
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 48,
+            "column": 3,
+            "offset": 1638
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 52,
+            "column": 4,
+            "offset": 1723
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 64,
+            "column": 3,
+            "offset": 2084
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 68,
+            "column": 4,
+            "offset": 2162
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 70,
+            "column": 3,
+            "offset": 2182
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 73,
+            "column": 4,
+            "offset": 2235
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 75,
+            "column": 3,
+            "offset": 2262
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 76,
+            "column": 4,
+            "offset": 2283
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 78,
+            "column": 3,
+            "offset": 2313
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 83,
+            "column": 3,
+            "offset": 2392
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+            "line": 86,
+            "column": 4,
+            "offset": 2452
+          }
+        }
+      ],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/ooad-sample-claims/claims-use-case.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/same-day-delivery-shop/stakeholders-and-values.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/same-day-delivery-shop/stakeholders-and-values.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/service-coordination-example/InsuranceClaimCoordination.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/service-coordination-example/InsuranceClaimCoordination.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/ClaimsManagement_with_Commands.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/workflow-samples/ClaimsManagement_with_Commands.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/ClaimsManagement_with_ServiceOperations.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/workflow-samples/ClaimsManagement_with_ServiceOperations.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/InsuranceQuoteRequest.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/workflow-samples/InsuranceQuoteRequest.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/InsuranceQuoteRequest_StateMachineWithoutEventsAndCommands.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/workflow-samples/InsuranceQuoteRequest_StateMachineWithoutEventsAndCommands.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/InsuranceQuoteRequest_StateMachineWithoutEventsAndCommands_Entity.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_output": "Context Mapper CLI v6.12.0\nThe CML file 'testdata/upstream/workflow-samples/InsuranceQuoteRequest_StateMachineWithoutEventsAndCommands_Entity.cml' has been validated without errors.\n\nWARNING: A terminally deprecated method in sun.misc.Unsafe has been called\nWARNING: sun.misc.Unsafe::objectFieldOffset has been called by com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper (file:reference/context-mapper-cli-6.12.0/lib/guava-32.1.2-jre.jar)\nWARNING: Please consider reporting this to the maintainers of class com.google.common.util.concurrent.AbstractFuture$UnsafeAtomicHelper\nWARNING: sun.misc.Unsafe::objectFieldOffset will be removed in a future release\n",
+      "reference_exit": 0
+    }
+  ]
+}

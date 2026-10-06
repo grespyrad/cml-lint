@@ -1,0 +1,72 @@
+version: '3'
+env:
+  GOWORK: 'off'
+tasks:
+  default:
+    cmds: [task --list]
+  tools:
+    cmds:
+      - for module in tools/*.mod; do go mod download -modfile="$module"; done
+      - npm ci --ignore-scripts
+  hooks:
+    cmds: [git config core.hooksPath .githooks]
+  fmt:
+    cmds: [go tool -modfile=tools/golangci.mod golangci-lint fmt]
+  lint:
+    cmds:
+      - go tool -modfile=tools/golangci.mod golangci-lint config verify
+      - ./scripts/check-format.sh
+      - go tool -modfile=tools/golangci.mod golangci-lint run
+  modules:
+    cmds:
+      - ./scripts/check-toolchain.sh
+      - ./scripts/check-modules.sh
+  build:
+    cmds: [go build ./...]
+  vet:
+    cmds: [go vet ./...]
+  specs:
+    cmds:
+      - npm ci --ignore-scripts
+      - npm run specs:check
+  policy:
+    cmds:
+      - python3 scripts/check-examples.py
+      - python3 scripts/check-examples.py --self-test
+      - ./scripts/check-policy.sh
+      - go run .agents/skills/repository-conventions/scripts/check.go -self-test
+  architecture:
+    cmds:
+      - python3 scripts/check_architecture.py --mode cli
+      - python3 scripts/check_architecture.py --mode cli --self-test
+  test:
+    cmds:
+      - PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s scripts -p test_report_paths.py
+      - mkdir -p .coverage
+      - go test -race -shuffle=on -count=1 -coverprofile=.coverage/unit.out ./...
+  vulnerability:
+    cmds: [go tool -modfile=tools/security.mod govulncheck ./...]
+  research:
+    cmds:
+      - go -C bench/lex mod tidy -diff
+      - go -C bench/lex mod verify
+      - go -C bench/lex test -race -shuffle=on -count=1 ./...
+  check:
+    cmds:
+      - task: modules
+      - task: lint
+      - task: architecture
+      - task: build
+      - task: vet
+      - task: test
+      - task: research
+      - task: vulnerability
+      - task: specs
+      - task: policy
+  fuzz:
+    cmds: [go test -run='^$' -fuzz=FuzzSource -fuzztime=10s ./internal/format]
+  bench:
+    cmds:
+      - python3 scripts/build_bench.py
+      - python3 scripts/bench_parity.py
+      - python3 scripts/compare.py --rounds 7 --iterations 100

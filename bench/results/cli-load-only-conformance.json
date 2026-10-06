@@ -1,0 +1,3240 @@
+{
+  "reference": "Context Mapper 6.12.0",
+  "files": 273,
+  "matches": 227,
+  "crashes": 0,
+  "rows": [
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-14.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "aggregate-root",
+          "message": "An aggregate can have only one aggregate root",
+          "position": {
+            "file": "testdata/conformance/AggregateDSLParsingTest-14.cml",
+            "line": 7,
+            "column": 6,
+            "offset": 121
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-15.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "aggregate-lifecycle",
+          "message": "An aggregate can have only one lifecycle enum",
+          "position": {
+            "file": "testdata/conformance/AggregateDSLParsingTest-15.cml",
+            "line": 8,
+            "column": 6,
+            "offset": 139
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-16.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-17.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "team-owner",
+          "message": "Aggregate owner must be a TEAM context",
+          "position": {
+            "file": "testdata/conformance/AggregateDSLParsingTest-5.cml",
+            "line": 3,
+            "column": 5,
+            "offset": 37
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-14.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-15.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-16.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-17.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-18.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-19.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-20.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-21.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-22.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-23.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-24.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-25.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-26.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-27.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-28.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-29.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-30.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-31.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-32.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Flow name 'TestFlow' is not unique",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerDSLParsingTest-7.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 56
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Flow name 'TestFlow' is not unique",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerDSLParsingTest-7.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 84
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-0.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "flow-context",
+          "message": "Command or operation must belong to the same bounded context as the flow",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-0.cml",
+            "line": 5,
+            "column": 7,
+            "offset": 75
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-1.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "flow-context",
+          "message": "Command or operation must belong to the same bounded context as the flow",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-1.cml",
+            "line": 5,
+            "column": 7,
+            "offset": 75
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-10.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "unresolved-reference",
+          "message": "Couldn't resolve reference to Service 'TestService'",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-10.cml",
+            "line": 8,
+            "column": 20,
+            "offset": 161
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-11.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "unresolved-reference",
+          "message": "Couldn't resolve reference to Service 'TestService'",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-11.cml",
+            "line": 8,
+            "column": 20,
+            "offset": 161
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-12.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "unresolved-reference",
+          "message": "Couldn't resolve reference to Service 'TestService'",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-12.cml",
+            "line": 9,
+            "column": 17,
+            "offset": 174
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-13.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "unresolved-reference",
+          "message": "Couldn't resolve reference to ServiceOperation 'operationB'",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-13.cml",
+            "line": 8,
+            "column": 30,
+            "offset": 171
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-14.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "coordination-ambiguous",
+          "message": "Coordination operation is overloaded",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-14.cml",
+            "line": 8,
+            "column": 7,
+            "offset": 148
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-15.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-2.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "flow-context",
+          "message": "Command or operation must belong to the same bounded context as the flow",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-2.cml",
+            "line": 5,
+            "column": 37,
+            "offset": 105
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-3.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "flow-context",
+          "message": "Command or operation must belong to the same bounded context as the flow",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-3.cml",
+            "line": 5,
+            "column": 39,
+            "offset": 107
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-4.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "state-transition",
+          "message": "State does not belong to the aggregate lifecycle",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-4.cml",
+            "line": 7,
+            "column": 43,
+            "offset": 139
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-5.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "state-transition",
+          "message": "State does not belong to the aggregate lifecycle",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-5.cml",
+            "line": 7,
+            "column": 53,
+            "offset": 149
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-7.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "coordination-context",
+          "message": "Coordination context is not reachable as upstream",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-7.cml",
+            "line": 5,
+            "column": 7,
+            "offset": 91
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-8.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "coordination-context",
+          "message": "Coordination context is not reachable as upstream",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-8.cml",
+            "line": 9,
+            "column": 7,
+            "offset": 164
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-9.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "coordination-context",
+          "message": "Coordination context is not reachable as upstream",
+          "position": {
+            "file": "testdata/conformance/ApplicationLayerValidationTest-9.cml",
+            "line": 12,
+            "column": 7,
+            "offset": 216
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "team-realizes",
+          "message": "Only TEAM contexts can realize other bounded contexts",
+          "position": {
+            "file": "testdata/conformance/BoundedContextDSLParsingTest-11.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "map-team",
+          "message": "ORGANIZATIONAL map contains no TEAM",
+          "position": {
+            "file": "testdata/conformance/ContextMapDSLParsingTest-6.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "map-team",
+          "message": "SYSTEM_LANDSCAPE map cannot contain TEAM contexts",
+          "position": {
+            "file": "testdata/conformance/ContextMapDSLParsingTest-7.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "self-relationship",
+          "message": "A context cannot have a relationship with itself",
+          "position": {
+            "file": "testdata/conformance/ContextMapDSLParsingTest-9.cml",
+            "line": 7,
+            "column": 6,
+            "offset": 88
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "implemented-subdomain",
+          "message": "Subdomain is already implemented through its parent domain",
+          "position": {
+            "file": "testdata/conformance/DomainDSLParsingTest-7.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "multiple-domains",
+          "message": "Bounded context implements multiple domains",
+          "position": {
+            "file": "testdata/conformance/DomainDSLParsingTest-8.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-3.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 66
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-3.cml",
+            "line": 9,
+            "column": 6,
+            "offset": 142
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-4.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 66
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-4.cml",
+            "line": 9,
+            "column": 6,
+            "offset": 142
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-reference",
+          "message": "Reference name resolves to multiple domain objects in this model",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-4.cml",
+            "line": 13,
+            "column": 7,
+            "offset": 208
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-5.cml",
+            "line": 10,
+            "column": 7,
+            "offset": 187
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "unreachable-reference",
+          "message": "Reference type is not exposed by a reachable upstream context",
+          "position": {
+            "file": "testdata/conformance/DomainObjectValidatorTest-6.cml",
+            "line": 15,
+            "column": 7,
+            "offset": 270
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-14.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-15.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-1.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-1.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-3.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-3.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-2.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "unresolved-reference",
+          "message": "Couldn't resolve reference to SimpleDomainObject 'Address'",
+          "position": {
+            "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-2.cml",
+            "line": 5,
+            "column": 22,
+            "offset": 107
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-3.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "unresolved-reference",
+          "message": "Couldn't resolve reference to SimpleDomainObject 'Address'",
+          "position": {
+            "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-3.cml",
+            "line": 11,
+            "column": 22,
+            "offset": 195
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainServicesTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainServicesTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainServicesTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDListOfEnumsTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDModuleValidationTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDModuleValidationTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDModuleValidationTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-12.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "state-transition",
+          "message": "State does not belong to the aggregate lifecycle",
+          "position": {
+            "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-12.cml",
+            "line": 5,
+            "column": 60,
+            "offset": 147
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-13.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "state-transition",
+          "message": "State does not belong to the aggregate lifecycle",
+          "position": {
+            "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-13.cml",
+            "line": 5,
+            "column": 41,
+            "offset": 128
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-14.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "state-transition",
+          "message": "State does not belong to the aggregate lifecycle",
+          "position": {
+            "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-14.cml",
+            "line": 5,
+            "column": 56,
+            "offset": 145
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-15.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "state-transition",
+          "message": "State does not belong to the aggregate lifecycle",
+          "position": {
+            "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-15.cml",
+            "line": 5,
+            "column": 37,
+            "offset": 126
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-16.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-0.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "BoundedContext name 'ContextA' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-0.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "BoundedContext name 'ContextA' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-0.cml",
+            "line": 4,
+            "column": 4,
+            "offset": 38
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-1.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Domain name 'TestDomain' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-1.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Domain name 'TestDomain' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-1.cml",
+            "line": 4,
+            "column": 4,
+            "offset": 32
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-10.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-10.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 59
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-10.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 79
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-domain-object",
+          "message": "Domain object name is not unique in its container",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-10.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 79
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-11.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-service",
+          "message": "Service name is not unique in its context",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-11.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 87
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-12.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-service",
+          "message": "Service name is not unique in its context",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-12.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 84
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-13.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Flow name 'TestFlow' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-13.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 56
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Flow name 'TestFlow' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-13.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 84
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-14.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Coordination name 'TestCoordination' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-14.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 56
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Coordination name 'TestCoordination' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-14.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 100
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-15.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Coordination name 'TestCoordination' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-15.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 53
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Coordination name 'TestCoordination' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-15.cml",
+            "line": 10,
+            "column": 6,
+            "offset": 155
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-2.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "subdomain-name",
+          "message": "Subdomain name must differ from its domain name",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-2.cml",
+            "line": 3,
+            "column": 5,
+            "offset": 28
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-3.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Subdomain name 'TestSubdomain' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-3.cml",
+            "line": 3,
+            "column": 5,
+            "offset": 28
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Subdomain name 'TestSubdomain' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-3.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 91
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-4.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "SculptorModule name 'Mod' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-4.cml",
+            "line": 3,
+            "column": 5,
+            "offset": 34
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "SculptorModule name 'Mod' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-4.cml",
+            "line": 4,
+            "column": 5,
+            "offset": 49
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-5.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Aggregate name 'agg' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-5.cml",
+            "line": 3,
+            "column": 5,
+            "offset": 34
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "Aggregate name 'agg' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-5.cml",
+            "line": 4,
+            "column": 5,
+            "offset": 52
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-6.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "UseCase name 'uc' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-6.cml",
+            "line": 2,
+            "column": 4,
+            "offset": 4
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-name",
+          "message": "UseCase name 'uc' is not unique",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-6.cml",
+            "line": 3,
+            "column": 4,
+            "offset": 18
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-7.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 56
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-7.cml",
+            "line": 7,
+            "column": 6,
+            "offset": 103
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-8.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-8.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 56
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-8.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 76
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-domain-object",
+          "message": "Domain object name is not unique in its container",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-8.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 76
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-9.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-9.cml",
+            "line": 4,
+            "column": 6,
+            "offset": 52
+          }
+        },
+        {
+          "severity": "warning",
+          "code": "ambiguous-domain-object",
+          "message": "Domain object name also occurs elsewhere in this model",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-9.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 72
+          }
+        },
+        {
+          "severity": "error",
+          "code": "duplicate-domain-object",
+          "message": "Domain object name is not unique in its container",
+          "position": {
+            "file": "testdata/conformance/UniquenessValidatorTest-9.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 72
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-2.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "exposed-aggregate",
+          "message": "Exposed aggregate must belong to the upstream context",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-2.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-3.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "exposed-aggregate",
+          "message": "Exposed aggregate must belong to the upstream context",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-3.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamGovernanceRightsTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamGovernanceRightsTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamGovernanceRightsTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-10.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-10.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 85
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-11.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-11.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 85
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "customer-supplier-role",
+          "message": "Customer-Supplier cannot use OHS",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-12.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "customer-supplier-role",
+          "message": "ACL is unusual in a Customer-Supplier relationship",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-13.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 85
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-14.cml",
+      "reference_valid": true,
+      "go_valid": false,
+      "match": false,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "customer-supplier-role",
+          "message": "Customer-Supplier cannot use CF",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-14.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 85
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-15.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-15.cml",
+            "line": 5,
+            "column": 6,
+            "offset": 59
+          }
+        }
+      ],
+      "reference_errors": "5: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-16.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-17.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-18.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-19.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-2.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-2.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-20.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-21.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-21.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-22.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-3.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-3.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-4.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-4.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-5.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-5.cml",
+            "line": 6,
+            "column": 5,
+            "offset": 82
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "customer-supplier-role",
+          "message": "ACL is unusual in a Customer-Supplier relationship",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-8.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 85
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-9.cml",
+      "reference_valid": false,
+      "go_valid": false,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "error",
+          "code": "syntax",
+          "message": "Unexpected \"<\"; expected ,, ID, [, contains, }",
+          "position": {
+            "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-9.cml",
+            "line": 6,
+            "column": 6,
+            "offset": 85
+          }
+        }
+      ],
+      "reference_errors": "6: mismatched input '<' expecting RULE_CLOSE\n"
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-14.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-15.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-16.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-17.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-18.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-19.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-20.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-21.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "feature-identifier",
+          "message": "Feature verb is not a valid identifier",
+          "position": {
+            "file": "testdata/conformance/UserStoryDSLParsingTest-3.cml",
+            "line": 3,
+            "column": 32,
+            "offset": 59
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [
+        {
+          "severity": "warning",
+          "code": "feature-identifier",
+          "message": "Feature entity is not a valid identifier",
+          "position": {
+            "file": "testdata/conformance/UserStoryDSLParsingTest-4.cml",
+            "line": 3,
+            "column": 32,
+            "offset": 59
+          }
+        }
+      ],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-0.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-1.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-10.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-11.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-12.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-13.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-14.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-15.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-16.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-17.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-18.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-19.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-2.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-20.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-21.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-22.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-23.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-3.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-4.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-5.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-6.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-7.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-8.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-9.cml",
+      "reference_valid": true,
+      "go_valid": true,
+      "match": true,
+      "go_diagnostics": [],
+      "reference_errors": ""
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+bin/
+.task/
+.coverage/
+.DS_Store
+*.test
+go.work
+go.work.sum
+
+node_modules/
+.task/
+.coverage/
+
+target/
+*.cpu
+*.mem
+
+
+# Локальные профили и замеры могут содержать пути окружения.
+bench/results/*.txt
+bench/results/comparison.json
+bench/results/stages.json
+bench/results/environment.json

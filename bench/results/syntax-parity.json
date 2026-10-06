@@ -1,0 +1,3012 @@
+{
+  "files": 334,
+  "matches": 334,
+  "rows": [
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-01-Split-Aggregate-by-Entities/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-01-Split-Aggregate-by-Entities/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-02-Split-Bounded-Context-by-Features/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-03-Split-Bounded-Context-by-Owner/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-04-Extract-Aggregates-by-Volatility/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-05-Extract-Aggregates-by-Cohesion/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-06-Merge-Aggregates/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-06-Merge-Aggregates/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-07-Merge-Bounded-Contexts/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-07-Merge-Bounded-Contexts/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-08-Extract-Shared-Kernel/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-a.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-b.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-09-Suspend-Partnership/example-output-c.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-10-Change-Shared-Kernel-To-Partnership/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-10-Change-Shared-Kernel-To-Partnership/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-11-Change-Partnership-To-Shared-Kernel/example-input.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/architectural-refactorings/AR-11-Change-Partnership-To-Shared-Kernel/example-output.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/bounded-context-canvas-example/Bounded-Context-Canvas-Example-Stage-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/context-mapper-example/ContextMapper-Example-Stage-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample-Stage-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-sample/DDD-Sample_Alternative-Relationship-Syntax.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ddd-service-cutting-sample/DDD-Sample.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example-Stage-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example_Alternative-Relationship-Syntax.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/insurance-example/Insurance-Example_Team-Map.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/lakeside-mutual/LakesideMutual.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/lakeside-mutual/QuoteRequestFlow.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/lakeside-mutual/ooad-example.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/microservice-generation/JDL-example/insurance-example-for-JDL-generation.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/ooad-sample-claims/claims-use-case.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/same-day-delivery-shop/stakeholders-and-values.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/service-coordination-example/InsuranceClaimCoordination.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/ClaimsManagement_with_Commands.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/ClaimsManagement_with_ServiceOperations.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/InsuranceQuoteRequest.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/InsuranceQuoteRequest_StateMachineWithoutEventsAndCommands.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/upstream/workflow-samples/InsuranceQuoteRequest_StateMachineWithoutEventsAndCommands_Entity.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-16.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-17.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/AggregateDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-16.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-17.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-18.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-19.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-20.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-21.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-22.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-23.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-24.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-25.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-26.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-27.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-28.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-29.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-30.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-31.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-32.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ApplicationLayerValidationTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/BoundedContextDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ContextMapDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/DomainObjectValidatorTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/StakeholderDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/SymmetricRelationshipDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDAssociatonsGrammarTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainObjectsTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainServicesTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainServicesTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDDomainServicesTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDListOfEnumsTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDModuleValidationTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDModuleValidationTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDModuleValidationTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-16.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/TacticDDDOperationsGrammarAndValidationTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UniquenessValidatorTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamExposedAggregatesTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamGovernanceRightsTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamGovernanceRightsTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamGovernanceRightsTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-15.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-16.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-17.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-18.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-19.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-20.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-21.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-22.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UpstreamDownstreamRelationshipDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-16.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-17.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-18.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-19.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-20.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-21.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UseCaseDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/UserStoryDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-0.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-1.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-10.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-11.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-12.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-13.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-14.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-15.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-16.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-17.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-18.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-19.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-2.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-20.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-21.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-22.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-23.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-3.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-4.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-5.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-6.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-7.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-8.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/conformance/ValueRegisterDSLParsingTest-9.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/escapes/backslash.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/escapes/octal.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/escapes/single.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/escapes/surrogate.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/escapes/unicode.cml",
+      "outcomes": {
+        "go": true,
+        "rust": true,
+        "cpp": true
+      },
+      "match": true
+    },
+    {
+      "file": "testdata/escapes/unknown.cml",
+      "outcomes": {
+        "go": false,
+        "rust": false,
+        "cpp": false
+      },
+      "match": true
+    }
+  ]
+}

@@ -7,4 +7,3 @@ CLI SHALL объявлять версию 0.3.0 и закреплять go-cml v
 #### Scenario: Версия CLI
 - **WHEN** пользователь вызывает cm --version
 - **THEN** CLI SHALL вывести 0.3.0.
-

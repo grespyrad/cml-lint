@@ -1,0 +1,1 @@
+BoundedContext Сервис { domainVisionStatement = "Сервис 文 🔧" Aggregate Запросы { Entity Запрос { aggregateRoot String идентификатор } } }

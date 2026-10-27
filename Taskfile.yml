@@ -10,6 +10,11 @@ tasks:
       - npm ci --ignore-scripts
   hooks:
     cmds: [git config core.hooksPath .githooks]
+  hooks:verify:
+    cmds:
+      - go build -o bin/cm ./cmd/cm
+      - pre-commit validate-manifest .pre-commit-hooks.yaml
+      - python3 scripts/verify_precommit.py --cm bin/cm
   fmt:
     cmds: [go tool -modfile=tools/golangci.mod golangci-lint fmt]
   lint:

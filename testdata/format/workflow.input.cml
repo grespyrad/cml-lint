@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { Application { Command Submit { String id } Event Accepted { String id } Flow SubmitRequest { command Submit [initiated by "Client"] delegates to Requests [OPEN -> ACCEPTED*] emits event Accepted event Accepted triggers command Submit } } Aggregate Requests { enum RequestState { aggregateLifecycle OPEN, ACCEPTED; } } }

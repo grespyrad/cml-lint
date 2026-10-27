@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration{Aggregate Requests{Entity Request{aggregateRoot String id String details}ValueObject Policy{String name}}Aggregate Rules{}}BoundedContext ExternalService{}

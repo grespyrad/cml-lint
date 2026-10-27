@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { responsibilities = "Receive and validate incoming service requests", "Apply the selected request policy", "Publish the processing result" }

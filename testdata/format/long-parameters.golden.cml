@@ -1,0 +1,12 @@
+BoundedContext ServiceIntegration {
+  Application {
+    Service RequestService {
+      void submitRequest(
+        String requestIdentifier,
+        String correlationIdentifier,
+        String requestDescription,
+        String policyIdentifier
+      );
+    }
+  }
+}

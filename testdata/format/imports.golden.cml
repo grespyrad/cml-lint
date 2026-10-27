@@ -1,0 +1,8 @@
+import "first.cml"
+import "second.cml"
+
+ContextMap {
+  contains ServiceIntegration
+}
+
+BoundedContext ServiceIntegration

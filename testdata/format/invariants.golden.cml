@@ -1,0 +1,15 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    Invariant Required {
+      rule = "Every request has an identifier"
+      rationale = "Stable reference"
+      testedBy = "example.TestRequired", "example.TestPolicy"
+      implementedBy = "example.Handle"
+    }
+
+    Entity Request {
+      aggregateRoot
+      String id
+    }
+  }
+}

@@ -1,4 +1,3 @@
-//nolint:cyclop // Средняя сложность отражает dispatch команд и grammar layout.
 package format_test
 
 import (
@@ -14,7 +13,7 @@ import (
 
 // TestFormat проверяет контракт линтера и форматтера.
 //
-//nolint:gosmopolitan,cyclop,gocognit,gocyclo // Unicode и layout проверяются сохранением токенов и corpus.
+//nolint:gosmopolitan // Unicode проверяется сохранением токенов.
 func TestFormat(t *testing.T) {
 	t.Parallel()
 
@@ -37,25 +36,7 @@ func TestFormat(t *testing.T) {
 		t.Fatalf("not idempotent\n%s\n%s", formatted, again)
 	}
 
-	first, err := cml.Tokenize("test.cml", source)
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	second, err := cml.Tokenize("test.cml", formatted)
-	if err != nil {
-		t.Fatal(err)
-	}
-
-	if len(first) != len(second) {
-		t.Fatal("token count changed")
-	}
-
-	for i, token := range first {
-		if token.Text != second[i].Text {
-			t.Fatalf("token %d changed", i)
-		}
-	}
+	assertSameTokens(t, source, formatted)
 
 	if bytes.Equal(source, formatted) || !bytes.Contains(formatted, []byte("    Entity ServiceIntegration {\n")) {
 		t.Fatalf("unexpected layout\n%s", formatted)
@@ -73,7 +54,7 @@ func TestRejectSyntax(t *testing.T) {
 
 // TestFormatCorpus проверяет контракт линтера и форматтера.
 //
-//nolint:cyclop,gocognit,gocyclo // Layout грамматики проверен token conservation и idempotency corpus.
+//nolint:gocognit // Обход corpus и точные проверки находятся в одном test scope.
 func TestFormatCorpus(t *testing.T) {
 	t.Parallel()
 
@@ -109,30 +90,36 @@ func TestFormatCorpus(t *testing.T) {
 				t.Fatal("not idempotent")
 			}
 
-			a, e := cml.Tokenize(path, data)
-			if e != nil {
-				t.Fatal(e)
-			}
-
-			b, e := cml.Tokenize(path, formatted)
-			if e != nil {
-				t.Fatal(e)
-			}
-
-			if len(a) != len(b) {
-				t.Fatal("token count changed")
-			}
-
-			for i := range a {
-				if a[i].Text != b[i].Text {
-					t.Fatalf("token %d changed", i)
-				}
-			}
+			assertSameTokens(t, data, formatted)
 		})
 
 		return nil
 	})
 	if err != nil {
 		t.Fatal(err)
+	}
+}
+
+func assertSameTokens(t *testing.T, source, output []byte) {
+	t.Helper()
+
+	first, err := cml.Tokenize("test.cml", source)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	second, err := cml.Tokenize("test.cml", output)
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if len(first) != len(second) {
+		t.Fatal("token count changed")
+	}
+
+	for i := range first {
+		if first[i].Kind != second[i].Kind || first[i].Text != second[i].Text {
+			t.Fatalf("token %d changed", i)
+		}
 	}
 }

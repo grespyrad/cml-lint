@@ -1,0 +1,16 @@
+Domain ServiceDomain {
+  domainVisionStatement = "Request processing"
+
+  Subdomain RequestManagement {
+    type = CORE_DOMAIN
+    domainVisionStatement = "Manage requests"
+
+    Entity Request {
+      String id
+    }
+
+    Service Requests {
+      void submit(String id);
+    }
+  }
+}

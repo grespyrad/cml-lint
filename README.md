@@ -25,6 +25,20 @@ Exit codes: 0 — проверка успешна; 1 — ошибка модел
 `lint` также проверяет семантику. `--fix` форматирует синтаксически корректный
 файл и затем снова проверяет семантику. Импорты проверяет CMLGo.
 
+[Руководство по форматированию и pre-commit](docs/FORMATTING.md): установка,
+пакетная обработка, рекурсивный обход каталогов и автоматическое форматирование
+staged файлов. Готовые hooks: `cml-format` и `cml-format-check`.
+
+```sh
+bin/cm format -w models/ contracts/
+bin/cm format --check first.cml 'models/second model.cml'
+```
+
+Pretty layout включён по умолчанию: два пробела на уровень, отдельные строки
+свойств и полей, пустые строки между блоками и перенос длинных списков и параметров.
+[Скачанный upstream образец и Java/Xtext formatter](testdata/format-reference/README.md)
+использованы как ориентир; выбранный стиль закреплён точными golden tests.
+
 Форматтер сохраняет токены, исходный текст строк и комментариев. Запись `-w`
 атомарна, сохраняет права и отказывает при symlink или изменении исходника во
 время работы. Синтаксическая ошибка оставляет файл без изменения.
@@ -48,8 +62,9 @@ go tool -modfile=tools/task.mod task hooks
 
 Включены OpenSpec, полный lint profile эталона, race/shuffle, module graph,
 architecture positive/negative probes, vulnerability scan и portable instruction
-checker. Formatter corpus проверяет сохранение токенов и идемпотентность на 55
-официальных примерах. Reference models описывают синтетическую интеграцию сервиса.
+checker. Formatter tests проверяют точный pretty layout, независимость от входных отступов,
+диалекты, CLI, сохранение токенов и идемпотентность на 55 официальных примерах
+и синтаксически валидной части conformance corpus. Reference models описывают синтетическую интеграцию сервиса.
 CMLGo semantic parity проверена на 273 upstream test snippets полным Xtext
 validator, а не только load/getErrors старого CLI. Это проверка сохранённого corpus,
 не доказательство любого возможного CML-файла или идентичности всех диагностик.

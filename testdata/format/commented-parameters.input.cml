@@ -1,0 +1,2 @@
+BoundedContext ServiceIntegration{Application{Service Requests{void submit(String id, // Identifier
+ String policy);}}}

@@ -1,0 +1,1 @@
+ContextMap{type=SYSTEM_LANDSCAPE state=TO_BE contains ServiceIntegration,ExternalService ServiceIntegration[U,OHS,PL]->[D,ACL]ExternalService{implementationTechnology="HTTP" exposedAggregates=Requests downstreamRights=INFLUENCER}ExternalService[P]<->[P]ServiceIntegration}BoundedContext ServiceIntegration{Aggregate Requests}BoundedContext ExternalService

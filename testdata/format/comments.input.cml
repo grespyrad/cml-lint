@@ -1,0 +1,6 @@
+// Model
+BoundedContext ServiceIntegration{/* Requests */Aggregate Requests{Entity Request{aggregateRoot // Root
+String id // Identifier
+/* description */String details}}} // Context
+// External
+BoundedContext ExternalService{}

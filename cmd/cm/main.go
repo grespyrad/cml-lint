@@ -21,11 +21,7 @@ func main() { os.Exit(run(os.Args[1:], os.Stdout, os.Stderr)) }
 //nolint:cyclop,gocognit,gocyclo,nestif // Layout грамматики проверен token conservation и idempotency corpus.
 func runWithDialect(args []string, out, errOut io.Writer, dialect cml.Dialect) int {
 	if len(args) == 0 || args[0] == "help" || args[0] == "--help" || args[0] == "-h" {
-		return report(out, 0, "Usage: cm validate -i model.cml [--json]\n"+
-			"       cm lint [--fix] -i model.cml\n"+
-			"       cm format [-w|--check] model.cml\n"+
-			"       cm generate -g plantuml -i model.cml -o directory\n"+
-			"       cm --version")
+		return report(out, 0, usage)
 	}
 
 	if args[0] == "version" || args[0] == "--version" || args[0] == "-V" {
@@ -33,7 +29,7 @@ func runWithDialect(args []string, out, errOut io.Writer, dialect cml.Dialect) i
 	}
 
 	command := args[0]
-	if command == "format" || command == commandLint {
+	if command == commandFormat || command == commandLint {
 		return formatCommand(command, args[1:], out, errOut, dialect)
 	}
 
@@ -159,5 +155,13 @@ var errArguments = errors.New("invalid arguments")
 
 const (
 	commandLint     = "lint"
+	commandFormat   = "format"
 	commandGenerate = "generate"
 )
+
+const usage = "Usage: cm validate -i model.cml [--json]\n" +
+	"       cm lint [--fix] -i model.cml\n" +
+	"       cm format model.cml\n" +
+	"       cm format (-w|--check) file.cml [file.cml|directory ...]\n" +
+	"       cm generate -g plantuml -i model.cml -o directory\n" +
+	"       cm --version"

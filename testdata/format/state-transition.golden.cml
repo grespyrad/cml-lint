@@ -1,0 +1,15 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    enum RequestState {
+      aggregateLifecycle
+      OPEN,
+      ACCEPTED,
+      REJECTED;
+    }
+
+    Service Requests {
+      void accept() : write [OPEN -> ACCEPTED* X REJECTED*];
+      void reset() : write [ACCEPTED, REJECTED -> OPEN];
+    }
+  }
+}

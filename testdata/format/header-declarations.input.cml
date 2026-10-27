@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { Aggregate Requests Aggregate Policies Service RequestService } BoundedContext ExternalService

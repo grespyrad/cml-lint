@@ -1,0 +1,12 @@
+/* Model
+ * { type = state }
+ */
+BoundedContext ServiceIntegration {
+  /* Request
+  details */
+  Aggregate Requests {
+    Entity Request {
+      String id
+    }
+  }
+}

@@ -1,0 +1,14 @@
+- id: cml-format
+  name: Форматирование CML
+  description: Каноническое pretty-форматирование изменённых CML-файлов.
+  entry: cm format -w --
+  language: golang
+  types: [file]
+  files: '\.cml$'
+- id: cml-format-check
+  name: Проверка форматирования CML
+  description: Проверка стиля CML без изменения файлов.
+  entry: cm format --check --
+  language: golang
+  types: [file]
+  files: '\.cml$'

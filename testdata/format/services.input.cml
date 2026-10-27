@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration{Application{Service Requests{void submit(String id);List<@Request> find(String id):read-only;}Coordination Handle{ServiceIntegration::Requests::submit;}}Aggregate Requests{Entity Request{aggregateRoot String id Repository Requests{find(String id);}}}}

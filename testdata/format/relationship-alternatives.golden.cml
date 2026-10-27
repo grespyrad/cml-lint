@@ -1,0 +1,13 @@
+ContextMap {
+  ServiceIntegration [OHS, PL] Upstream-Downstream [ACL] ExternalService
+
+  ExternalService Customer-Supplier ServiceIntegration
+
+  ServiceIntegration Shared-Kernel ExternalService
+
+  [P] ServiceIntegration <-> ExternalService [P]
+}
+
+BoundedContext ServiceIntegration
+
+BoundedContext ExternalService

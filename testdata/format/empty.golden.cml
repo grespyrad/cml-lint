@@ -1,0 +1,10 @@
+ContextMap {
+}
+
+BoundedContext ServiceIntegration {
+}
+
+Domain Requests {
+  Subdomain Policies {
+  }
+}

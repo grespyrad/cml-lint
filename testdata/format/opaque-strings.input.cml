@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { domainVisionStatement = "Braces { } and keywords type state; @Request<Policy>" Aggregate Requests { Entity Request { String details hint = "Escapes: \"quoted\", \\n, \u0041" } } }

@@ -1,0 +1,13 @@
+Stakeholders {
+  StakeholderGroup Clients {
+    Stakeholder Client {
+      influence = HIGH
+      interest = MEDIUM
+      description = "Service user"
+    }
+
+    Stakeholder Reviewer {
+      influence = LOW
+    }
+  }
+}

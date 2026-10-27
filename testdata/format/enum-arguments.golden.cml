@@ -1,0 +1,9 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    enum RequestState {
+      String label
+      OPEN("Open"),
+      ACCEPTED("Accepted");
+    }
+  }
+}

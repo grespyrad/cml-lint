@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { Module Requests { external basePackage = example.requests hint = "Public API" Aggregate Requests { Entity Request { package = example.requests gap hint = "Request data" aggregateRoot String id key String details hint = "Text" } } } }

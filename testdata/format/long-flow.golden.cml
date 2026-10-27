@@ -1,0 +1,9 @@
+BoundedContext ServiceIntegration {
+  Application {
+    Flow ProcessRequest {
+      command SubmitRequest
+        delegates to RequestProcessing [SUBMITTED -> ACCEPTED X REJECTED]
+        emits event RequestAccepted X RequestRejected
+    }
+  }
+}

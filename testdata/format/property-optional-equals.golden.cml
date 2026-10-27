@@ -1,0 +1,15 @@
+BoundedContext ServiceIntegration {
+  type FEATURE
+  domainVisionStatement "Request processing"
+  responsibilities "Requests", "Policies"
+
+  Aggregate Requests {
+    owner ServiceIntegration
+    structuralVolatility RARELY
+    availabilityCriticality HIGH
+    consistencyCriticality NORMAL
+    storageSimilarity NORMAL
+    securityCriticality HIGH
+    securityAccessGroup "service"
+  }
+}

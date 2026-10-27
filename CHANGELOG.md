@@ -1,5 +1,13 @@
 # Изменения
 
+## Не выпущено
+
+- Единый pretty formatter: структурные отступы, пустые строки, свойства и поля,
+  компактные generic types и роли, перенос длинных параметров, списков и flows.
+- `format -w` и `format --check` для нескольких файлов и рекурсивных каталогов.
+- Готовые pre-commit hooks с автоисправлением и подробное руководство настройки.
+- Точные golden tests, Java/Xtext reference, conformance corpus и fuzz regression.
+
 ## 0.3.0
 
 - CLI и bench/lex переведены на `github.com/grespyrad/go-cml v0.3.0`.

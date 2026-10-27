@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { Application { Service RequestProcessingService { void submitRequestForPolicyValidation( String identifierOfTheRequestThatMustBeValidatedBeforeProcessing ); } } }

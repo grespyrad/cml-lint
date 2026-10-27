@@ -1,12 +1,8 @@
 // Package format задаёт канонический layout CML с сохранением исходных токенов.
-//
-//nolint:cyclop // Средняя сложность отражает dispatch команд и grammar layout.
 package format
 
 import (
 	"fmt"
-	"slices"
-	"strings"
 
 	"github.com/grespyrad/go-cml"
 )
@@ -34,19 +30,21 @@ func SourceWithDialect(file string, source []byte, dialect cml.Dialect) ([]byte,
 		return nil, fmt.Errorf("format CML: %w", err)
 	}
 
-	boundaries := map[int]bool{}
-	collectBoundaries(result.Model, boundaries)
-	collectInvariantBoundaries(result.Model, boundaries, tokens)
-
-	layout := writer{data: nil, indent: 0, lineStart: false, boundaries: boundaries, compact: false}
-
-	for i, token := range tokens {
-		layout.write(token, i, tokens)
+	if balanceErr := validateDelimiters(tokens); balanceErr != nil {
+		return nil, balanceErr
 	}
 
-	layout.newline()
+	plan := planLayout(result.Model, tokens, dialect)
+	formatted := render(plan)
 
-	formatted := layout.data
+	flatTokens, err := cml.TokenizeWithDialect(file, formatted, dialect)
+	if err != nil {
+		return nil, fmt.Errorf("tokenize pretty layout: %w", err)
+	}
+
+	plan.wrapLongLines(formatted, flatTokens)
+
+	formatted = render(plan)
 
 	check, err := cml.TokenizeWithDialect(file, formatted, dialect)
 	if err != nil {
@@ -76,129 +74,30 @@ func SourceWithDialect(file string, source []byte, dialect cml.Dialect) ([]byte,
 	return formatted, nil
 }
 
-func collectBoundaries(n *cml.Node, boundaries map[int]bool) {
-	if n == nil {
-		return
-	}
+// validateDelimiters защищает layout даже при слишком мягком принятии parser.
+func validateDelimiters(tokens []cml.Lexeme) error {
+	var stack []string
 
-	if !member(
-		n.Kind,
-		"ComplexType Parameter StateTransition StateTransitionTarget TargetState EitherCommandOrOperation",
-	) &&
-		n.Kind != "ContextMappingModel" &&
-		n.Kind != "NormalFeature" &&
-		n.Kind != "StoryFeature" {
-		boundaries[n.Position.Offset] = true
-	}
+	closing := map[string]string{"}": "{", ")": "(", "]": "["}
 
-	for _, values := range n.Fields {
-		for _, value := range values {
-			if value.Node != nil {
-				collectBoundaries(value.Node, boundaries)
+	for _, token := range tokens {
+		switch token.Text {
+		case "{", "(", "[":
+			stack = append(stack, token.Text)
+		case "}", ")", "]":
+			if len(stack) == 0 || stack[len(stack)-1] != closing[token.Text] {
+				return fmt.Errorf("unbalanced delimiter %q at %d:%d: %w", token.Text,
+					token.Position.Line, token.Position.Column, cml.ErrInvalidModel)
 			}
+
+			stack = stack[:len(stack)-1]
+		default:
 		}
 	}
-}
 
-type writer struct {
-	data       []byte
-	indent     int
-	lineStart  bool
-	boundaries map[int]bool
-	compact    bool
-}
-
-func (w *writer) newline() {
-	data := w.data
-	if len(data) > 0 && data[len(data)-1] != '\n' {
-		w.data = append(w.data, '\n')
+	if len(stack) != 0 {
+		return fmt.Errorf("unclosed delimiter: %w", cml.ErrInvalidModel)
 	}
 
-	w.lineStart = true
-	w.compact = false
+	return nil
 }
-
-func (w *writer) text(text string) {
-	if len(w.data) == 0 || w.lineStart {
-		w.data = append(w.data, strings.Repeat("  ", w.indent)...)
-
-		w.lineStart = false
-	} else if !w.compact {
-		w.data = append(w.data, ' ')
-	}
-
-	w.data = append(w.data, text...)
-
-	w.compact = false
-}
-
-//nolint:cyclop,funlen,gocognit,gocyclo // Layout грамматики проверен token conservation и idempotency corpus.
-func (w *writer) write(token cml.Lexeme, index int, tokens []cml.Lexeme) {
-	if token.Kind == "comment" {
-		if index == 0 || tokens[index-1].Position.Line != token.Position.Line {
-			w.newline()
-		}
-
-		w.text(token.Text)
-		w.newline()
-
-		return
-	}
-
-	if w.boundaries[token.Position.Offset] {
-		w.newline()
-	}
-
-	switch token.Text {
-	case "{":
-		w.text("{")
-		w.newline()
-
-		w.indent++
-	case "}":
-		w.newline()
-
-		if w.indent > 0 {
-			w.indent--
-		}
-
-		w.text("}")
-		w.newline()
-	case ";":
-		w.compact = true
-		w.text(";")
-		w.newline()
-	case ",":
-		w.compact = true
-		w.text(",")
-	case "(":
-		w.compact = true
-		w.text("(")
-
-		w.compact = true
-	case ")":
-		w.compact = true
-		w.text(")")
-	case ".", "::":
-		w.compact = true
-		w.text(token.Text)
-
-		w.compact = true
-	default:
-		if token.Kind == "lit" &&
-			member(token.Text, newlineProperties) {
-			w.newline()
-		}
-
-		w.text(token.Text)
-	}
-}
-
-func member(value, list string) bool { return slices.Contains(strings.Fields(list), value) }
-
-const (
-	noNewlineKinds = "ComplexType Parameter StateTransition StateTransitionTarget " +
-		"TargetState EitherCommandOrOperation"
-	newlineProperties = "contains type state domainVisionStatement responsibilities " +
-		"implementationTechnology knowledgeLevel owner aggregateRoot"
-)

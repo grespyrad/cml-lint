@@ -1,4 +1,3 @@
-//nolint:cyclop // Corpus и fuzz проверяют все ветви отказа форматтера.
 package format_test
 
 import (

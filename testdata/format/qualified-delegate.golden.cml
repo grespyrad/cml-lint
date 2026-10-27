@@ -1,0 +1,17 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    Service RequestService {
+      > @RequestRepository
+      @Request submit(@Request request) delegates to @RequestRepository.save;
+    }
+
+    Entity Request {
+      aggregateRoot
+      String id
+
+      Repository RequestRepository {
+        @Request save(@Request request);
+      }
+    }
+  }
+}

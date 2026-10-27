@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration{Aggregate Requests{Entity Request{aggregateRoot List<String> names -List<@Policy> policies def Map<String,@Policy> find(Map<String,@Policy> policies,@Request request);}ValueObject Policy{String id}}}

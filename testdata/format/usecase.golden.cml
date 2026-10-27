@@ -1,0 +1,9 @@
+UseCase SubmitRequest {
+  actor = "Client"
+  secondaryActors = "Operator", "Reviewer"
+  interactions = create a "Request",
+    read the "Policy"
+  benefit = "Request accepted"
+  scope = "Service"
+  level = "User"
+}

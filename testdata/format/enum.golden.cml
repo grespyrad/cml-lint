@@ -1,0 +1,16 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    enum RequestState {
+      aggregateLifecycle
+      OPEN,
+      ACCEPTED,
+      REJECTED;
+    }
+
+    Entity Request {
+      aggregateRoot
+      - RequestState lifecycle
+      def void accept() : write [OPEN -> ACCEPTED*];
+    }
+  }
+}

@@ -1,0 +1,23 @@
+BoundedContext ServiceIntegration {
+  type = FEATURE
+  domainVisionStatement = "Request service"
+  responsibilities = "Requests", "Policies"
+  implementationTechnology = "Go"
+  knowledgeLevel = CONCRETE
+  businessModel = "Service"
+  evolution = PRODUCT
+
+  Aggregate Requests {
+    responsibilities = "Requests"
+    owner = ServiceIntegration
+    knowledgeLevel = CONCRETE
+    likelihoodForChange = RARELY
+    contentVolatility = NORMAL
+    securityZone = "service"
+
+    Entity Request {
+      aggregateRoot
+      String id
+    }
+  }
+}

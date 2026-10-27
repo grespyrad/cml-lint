@@ -1,0 +1,7 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    Entity Request {
+      String id
+    }
+  }
+}

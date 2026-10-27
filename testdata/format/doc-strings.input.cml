@@ -1,0 +1,1 @@
+BoundedContext ServiceIntegration { "Request aggregate" Aggregate Requests { "Request entity" abstract Entity Request { "Identifier" String id "Operation" def void submit(String id); } } }

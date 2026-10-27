@@ -1,0 +1,12 @@
+BoundedContext ServiceIntegration {
+  type = FEATURE
+  domainVisionStatement = "true"
+  responsibilities = "false"
+
+  Aggregate Requests {
+    Invariant Required {
+      rationale = "true"
+      rule = "true"
+    }
+  }
+}

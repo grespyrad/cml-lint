@@ -15,22 +15,22 @@ import (
 	"github.com/grespyrad/cml-lint/internal/format"
 )
 
-//nolint:gosec,cyclop,funlen,gocognit,gocyclo,nestif // Локальные CLI paths доверены; поведение проверяется тестами.
+//nolint:cyclop,gocognit,gocyclo // Проверяется совместимость flags для двух CLI команд.
 func formatCommand(command string, args []string, out, errOut io.Writer, dialect cml.Dialect) int {
 	flags := flag.NewFlagSet(command, flag.ContinueOnError)
 	flags.SetOutput(errOut)
 
 	var (
-		input                         string
-		write, check, fix, jsonOutput bool
+		input   string
+		options formatOptions
 	)
 
 	flags.StringVar(&input, "i", "", "CML input")
 	flags.StringVar(&input, "input", "", "CML input")
-	flags.BoolVar(&write, "w", false, "update file atomically")
-	flags.BoolVar(&check, "check", false, "check formatting")
-	flags.BoolVar(&fix, "fix", false, "format before lint")
-	flags.BoolVar(&jsonOutput, "json", false, "JSON diagnostics")
+	flags.BoolVar(&options.write, "w", false, "update file atomically")
+	flags.BoolVar(&options.check, "check", false, "check formatting")
+	flags.BoolVar(&options.fix, "fix", false, "format before lint")
+	flags.BoolVar(&options.jsonOutput, "json", false, "JSON diagnostics")
 
 	if err := flags.Parse(args); err != nil {
 		if errors.Is(err, flag.ErrHelp) {
@@ -40,21 +40,46 @@ func formatCommand(command string, args []string, out, errOut io.Writer, dialect
 		return exitArguments
 	}
 
-	if input == "" && flags.NArg() == 1 {
-		input = flags.Arg(0)
-	} else if flags.NArg() > 0 {
-		return report(errOut, exitArguments, "Provide exactly one CML input")
+	inputs := flags.Args()
+
+	if input != "" {
+		if len(inputs) > 0 {
+			return report(errOut, exitArguments, "Use either -i or positional paths")
+		}
+
+		inputs = []string{input}
 	}
 
-	if input == "" || write && check || command == "format" && (fix || jsonOutput) ||
-		command == commandLint && (write || check) {
+	if len(inputs) == 0 || options.write && options.check ||
+		command == commandFormat && (options.fix || options.jsonOutput) ||
+		command == commandLint && (options.write || options.check || len(inputs) != 1) ||
+		command == commandFormat && !options.write && !options.check && len(inputs) != 1 {
 		return report(errOut, exitArguments, "Invalid arguments: provide input and a compatible mode")
 	}
+
+	if command == commandFormat && (options.write || options.check) {
+		return formatBatch(inputs, options, out, errOut, dialect)
+	}
+
+	return formatFile(command, inputs[0], options, out, errOut, dialect)
+}
+
+type formatOptions struct {
+	write      bool
+	check      bool
+	fix        bool
+	jsonOutput bool
+}
+
+//nolint:cyclop,funlen,gocognit,gocyclo,nestif // Один файл обслуживает общий контракт format и lint.
+func formatFile(command, input string, options formatOptions, out, errOut io.Writer, dialect cml.Dialect) int {
+	write, check, fix, jsonOutput := options.write, options.check, options.fix, options.jsonOutput
 
 	if !strings.HasSuffix(input, ".cml") {
 		return report(errOut, 1, "ERROR: input must be a .cml file")
 	}
 
+	//nolint:gosec // CLI намеренно читает указанный пользователем локальный путь.
 	source, err := os.ReadFile(input)
 	if err != nil {
 		return report(errOut, 1, fmt.Sprint("Read CML:", err))

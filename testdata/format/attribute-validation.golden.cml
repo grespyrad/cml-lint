@@ -1,0 +1,14 @@
+BoundedContext ServiceIntegration {
+  Aggregate Requests {
+    Entity Request {
+      aggregateRoot
+      String id key required unique
+      String details hint = "type, state, owner" size = "1, 100" notEmpty
+      - Policy policy required valid opposite requests;
+    }
+
+    ValueObject Policy {
+      - List<Request> requests
+    }
+  }
+}

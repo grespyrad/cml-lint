@@ -23,7 +23,7 @@ func TestCLI(t *testing.T) {
 		{[]string{"validate", "-i", "missing.cml"}, 1, "ERROR"},
 		{[]string{"validate"}, 2, "input"},
 		{[]string{"validate", "-h"}, 0, "Usage"},
-		{[]string{"--version"}, 0, "0.2.3"},
+		{[]string{"--version"}, 0, "0.3.0"},
 		{[]string{"unknown"}, 2, "Unknown command"},
 	}
 	for _, tc := range cases {

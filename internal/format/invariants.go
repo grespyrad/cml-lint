@@ -1,7 +1,7 @@
 //nolint:cyclop // Layout grammar и AST boundaries проверяются corpus, dialect и fuzz tests.
 package format
 
-import cml "github.com/grespyrad/CMLGo"
+import "github.com/grespyrad/go-cml"
 
 //nolint:cyclop,gocognit,gocyclo // AST показывает property boundaries; обход не меняет lexer tokens.
 func collectInvariantBoundaries(node *cml.Node, boundaries map[int]bool, tokens []cml.Lexeme) {

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Независимый Go CLI с внешней CMLGo библиотекой для проверки исходного CML. Контракт основан
+Независимый Go CLI с внешней go-cml библиотекой для проверки исходного CML. Контракт основан
 на эталоне etalon-go-library и грамматиках Context Mapper 6.12.0.
 
 ## Requirements
@@ -45,7 +45,7 @@ coordination и ограничения тактических свойств. Wa
 - **THEN** модель SHALL приниматься без изменения содержимого строки.
 
 ### Requirement: Публичный API и CLI
-CLI SHALL импортировать versioned CMLGo для parser и semantic validation.
+CLI SHALL импортировать versioned go-cml для parser и semantic validation.
 CLI SHALL поддерживать validate -i/--input, --json, help и version.
 Exit codes SHALL быть 0 для валидной модели, 1 для ошибок модели/IO и 2 для неверных аргументов.
 Production CLI MUST не требовать JVM для parsing, validation или PlantUML text generation.
@@ -71,3 +71,12 @@ Rust prototype MUST не выдаваться за полный эквивале
 #### Scenario: Воспроизводимый замер
 - **WHEN** запускаются benchmark команды из документации
 - **THEN** результаты SHALL содержать версии, workload, единицы и ограничения сравнения.
+
+### Requirement: Каноническая зависимость go-cml
+CLI и исследовательский bench/lex SHALL импортировать
+github.com/grespyrad/go-cml v0.3.0 с именем пакета cml без import alias.
+Документация, ссылки и архитектурные проверки MUST использовать новый путь.
+
+#### Scenario: Сборка из опубликованного модуля
+- **WHEN** пользователь собирает CLI или запускает bench/lex tests
+- **THEN** Go SHALL загружать go-cml v0.3.0 без локального replace.

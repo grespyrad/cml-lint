@@ -2,12 +2,12 @@
 
 ## Purpose
 
-Линтер и форматтер исходного CML на основе отдельной библиотеки CMLGo.
+Линтер и форматтер исходного CML на основе отдельной библиотеки go-cml.
 
 ## Requirements
 
 ### Requirement: Внешняя библиотека
-CLI MUST импортировать CMLGo через закреплённый Go module version. Копии
+CLI MUST импортировать go-cml через закреплённый Go module version. Копии
 parser, grammar или generated model types в production cml-lint MUST отсутствовать.
 Research-only grammar snapshots под bench SHALL быть явно отделены от production.
 

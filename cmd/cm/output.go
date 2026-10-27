@@ -5,7 +5,7 @@ import (
 	"io"
 	"strings"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 func report(out io.Writer, code int, message string) int {

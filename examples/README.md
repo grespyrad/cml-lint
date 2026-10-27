@@ -4,7 +4,7 @@
 одну условную предметную область: приём запросов от внешнего сервиса. Первый
 использует русские имена и встроенные DDD aliases; второй — английские имена
 и ключевые слова. Описания правил в обоих вариантах на русском.
-Имена библиотек и CLI остаются CMLGo и cml-lint.
+Имена библиотек и CLI остаются go-cml и cml-lint.
 
 ## Возможности с v0.2.0
 
@@ -56,7 +56,7 @@ bin/cm generate -g plantuml -i examples/service-en.cml -o bin/example-diagrams
 bin/cm --original validate -i testdata/reference/service.cml
 ```
 
-Библиотечные примеры API находятся в CMLGo `example_test.go` и выполняются
+Библиотечные примеры API находятся в go-cml `example_test.go` и выполняются
 через `go test ./...`. Парные CML файлы одинаковы в обоих репозиториях.
 
 ## Модель эталонного Go-сервиса
@@ -86,14 +86,14 @@ Root aggregate и value objects описывают границы данных. 
 CML CREATED/PROCESSING соответствуют Go created/processing, INIT/PUBLISHED/RESERVED —
 init/published/reserved. OrderedProduct — проекция продукта в контексте заказа.
 
-В CMLGo пакет examples/reference содержит небольшую Go-реализацию трёх правил
+В go-cml пакет examples/reference содержит небольшую Go-реализацию трёх правил
 и внешние тесты. Ссылки examples/reference.* в этих двух моделях относятся
 к реальным нейтральным methods/tests этой библиотеки, в отличие от условных
 example.* в вводных service-ru/service-en examples. Реализация покрывает переходы
 состояний и сброс ссылки на вложение; PostgreSQL, Kafka, UUID, HTTP и S3 в неё
 не входят. Пример не обещает транзакционность между SQL и Kafka или устранение
 дубликатов при создании Delivery: таких гарантий эта модель источника не доказывает.
-Синтаксис Invariant — расширение CMLGo; validator не исполняет эти правила.
+Синтаксис Invariant — расширение go-cml; validator не исполняет эти правила.
 
 ```sh
 bin/cm validate -i examples/etalon-service.cml --json

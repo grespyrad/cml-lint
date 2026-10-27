@@ -18,10 +18,10 @@ def inspect(root,mode):
    if mode=='library':
     for package in imports:
      if package=='os/exec' or package.startswith('net/') and package!='net/url' or package=='net':errors.append(str(relative)+' forbidden runtime import '+package)
-     if '.' in package.split('/')[0] and not package.startswith('github.com/grespyrad/CMLGo'):errors.append(str(relative)+' external runtime dependency '+package)
+     if '.' in package.split('/')[0] and not package.startswith('github.com/grespyrad/go-cml'):errors.append(str(relative)+' external runtime dependency '+package)
  if mode=='cli':
   module=(root/'go.mod').read_text()
-  if not re.search(r'github.com/grespyrad/CMLGo\s+v\d+\.\d+\.\d+',module):errors.append('CMLGo is not pinned')
+  if not re.search(r'github.com/grespyrad/go-cml\s+v\d+\.\d+\.\d+',module):errors.append('go-cml is not pinned')
   if 'replace ' in module:errors.append('local replace in released module')
  return errors
 if args.self_test:

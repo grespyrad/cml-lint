@@ -1,5 +1,11 @@
 # Изменения
 
+## 0.3.0
+
+- CLI и bench/lex переведены на `github.com/grespyrad/go-cml v0.3.0`.
+- Импорты используют имя пакета `cml` без алиаса; обновлены ссылки и проверки.
+- Версия CLI обновлена до 0.3.0.
+
 ## 0.2.3
 
 - CLI на CMLGo v0.2.3: validate, lint, format и PlantUML.

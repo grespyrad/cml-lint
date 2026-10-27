@@ -4,7 +4,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // writer применяет структурные границы и контекстные пробелы к исходным токенам.

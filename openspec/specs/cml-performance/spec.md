@@ -22,7 +22,7 @@ Go benchmark tests SHALL измерять Tokenize, CheckSyntax, Parse, Validate
 runtime от прикладного кода, а сравнение lexer MUST не выдаваться за semantic parity.
 
 #### Scenario: Сравнение библиотеки
-- **WHEN** запускается benchmark lexer CMLGo и Participle
+- **WHEN** запускается benchmark lexer go-cml и Participle
 - **THEN** отчёт SHALL содержать результаты обоих и ограничения адаптера;
   pipeline выигрыш MUST не вычисляться простым переносом lexer valueup.
 

@@ -20,7 +20,7 @@ Reference models in testdata/reference illustrate a fictional service integratio
 They contain no deployment configuration or real service identifiers.
 This is an independent Go implementation, not an official Context Mapper product.
 
-Production parsing and validation are imported from CMLGo v0.2.3.
+Production parsing and validation are imported from go-cml v0.3.0.
 The grammar snapshot and syntax recognizers under bench are research-only.
 
 Formatter reference snapshots in testdata/format-reference retain the example's

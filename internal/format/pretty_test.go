@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 
 	"github.com/grespyrad/cml-lint/internal/format"
 )

@@ -12,7 +12,7 @@ import (
 	"unicode/utf8"
 
 	"github.com/alecthomas/participle/v2/lexer"
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 var (

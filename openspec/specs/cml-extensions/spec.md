@@ -2,12 +2,12 @@
 
 ## Purpose
 
-Интеграция декларативных инвариантов и языковых возможностей CMLGo.
+Интеграция декларативных инвариантов и языковых возможностей go-cml.
 
 ## Requirements
 
 ### Requirement: Расширенная модель
-CLI SHALL проверять и форматировать CMLGo Invariant blocks с сохранением tokens,
+CLI SHALL проверять и форматировать go-cml Invariant blocks с сохранением tokens,
 Unicode names и optional Russian aliases. Строки MUST не переводиться.
 
 #### Scenario: Декларативный инвариант

@@ -5,7 +5,7 @@ import (
 	"slices"
 	"strings"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // layoutPlan связывает переносы с AST, не восстанавливая текст из значений модели.

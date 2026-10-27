@@ -11,10 +11,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
-const version = "0.2.3"
+const version = "0.3.0"
 
 func main() { os.Exit(run(os.Args[1:], os.Stdout, os.Stderr)) }
 

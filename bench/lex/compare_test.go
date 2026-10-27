@@ -6,7 +6,7 @@ import (
 	"reflect"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // Все corpus проверяются до сравнения скорости; timing не является assertion.
@@ -59,7 +59,7 @@ func assertParity(t *testing.T, name string, source []byte) {
 	want, werr := cml.Tokenize(name, source)
 	got, gerr := alternative(name, source)
 	if (werr == nil) != (gerr == nil) {
-		t.Fatalf("errors CMLGo=%v Participle=%v", werr, gerr)
+		t.Fatalf("errors go-cml=%v Participle=%v", werr, gerr)
 	}
 	if werr == nil && !reflect.DeepEqual(want, got) {
 		if len(want) != len(got) {
@@ -81,7 +81,7 @@ func BenchmarkStages(b *testing.B) {
 			b.Fatal(err)
 		}
 		stages := map[string]func() error{
-			"Tokenize/CMLGo":      func() error { _, err := cml.Tokenize(path, source); return err },
+			"Tokenize/go-cml":     func() error { _, err := cml.Tokenize(path, source); return err },
 			"Tokenize/Participle": func() error { _, err := alternative(path, source); return err },
 			"CheckSyntax": func() error {
 				r := cml.CheckSyntax(path, source)

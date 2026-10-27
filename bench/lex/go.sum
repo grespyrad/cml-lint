@@ -4,7 +4,7 @@ github.com/alecthomas/participle/v2 v2.1.4 h1:W/H79S8Sat/krZ3el6sQMvMaahJ+XcM9WS
 github.com/alecthomas/participle/v2 v2.1.4/go.mod h1:8tqVbpTX20Ru4NfYQgZf4mP18eXPTBViyMWiArNEgGI=
 github.com/alecthomas/repr v0.4.0 h1:GhI2A8MACjfegCPVq9f1FLvIBS+DrQ2KQBFZP1iFzXc=
 github.com/alecthomas/repr v0.4.0/go.mod h1:Fr0507jx4eOXV7AlPV6AVZLYrLIuIeSOWtW57eE/O/4=
-github.com/grespyrad/CMLGo v0.2.3 h1:vaNzdlr2KgNTN8KeSukeCcxD6FlxIV32zhE1KUoAKB8=
-github.com/grespyrad/CMLGo v0.2.3/go.mod h1:gLx+LMVoYq+g13F6WONqttkc3lmb/9t7vlApDjDXxjo=
+github.com/grespyrad/go-cml v0.3.0 h1:gNfU328DbTRYB6Btryzcl7gPbB66rtljPY/0eyyCVNs=
+github.com/grespyrad/go-cml v0.3.0/go.mod h1:K8j9R3qmgJBcXZY9VUahu+wnO0fMkFYiJtpgGOcIgcw=
 github.com/hexops/gotextdiff v1.0.3 h1:gitA9+qJrrTCsiCl7+kh75nPqQt1cx4ZkudSTLoUqJM=
 github.com/hexops/gotextdiff v1.0.3/go.mod h1:pSWU5MAI3yDq+fZBTazCSJysOMbxWL1BSow5/V2vxeg=

@@ -1,4 +1,4 @@
-// Test-only oracle. Production CMLGo/cml-lint require no JVM.
+// Test-only oracle. Production go-cml/cml-lint require no JVM.
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.util.Base64;

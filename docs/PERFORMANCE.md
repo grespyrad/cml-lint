@@ -1,6 +1,6 @@
 # Исследование производительности
 
-Production parser и semantic validator находятся в CMLGo. Rust/C++ probes
+Production parser и semantic validator находятся в go-cml. Rust/C++ probes
 реализуют только распознавание исходной CML 6.12.0 grammar. Их время нельзя
 сравнивать со временем полной семантической проверки как эквивалентные операции.
 
@@ -22,12 +22,12 @@ Reference workloads `service-before.cml` и `service.cml` описывают у�
 
 ## Что проверяется
 
-`bench/lex` закрепляет CMLGo и Participle v2.1.4. TestLexerParity сравнивает
+`bench/lex` закрепляет go-cml и Participle v2.1.4. TestLexerParity сравнивает
 raw tokens/kinds/positions на upstream, conformance, escape и reference corpus;
 TestLexerEdges проверяет Unicode, keywords, quoting и невалидный UTF-8.
 `task check` включает эти проверки. Parity на corpus не доказывает эквивалентность
 на любом возможном входе. Новые примеры с Invariant относятся к расширенному
-CMLGo и не являются входом Original syntax probes.
+go-cml и не являются входом Original syntax probes.
 
 BenchmarkStages измеряет Tokenize, CheckSyntax, Parse, Validate и Unmarshal.
 Каждый API выполняется отдельно; их времена нельзя складывать. Unmarshal

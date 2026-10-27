@@ -8,7 +8,7 @@ import (
 	"io"
 	"os"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 //nolint:gocognit,gosec,nestif // Глобальные CLI options и доверенный локальный путь словаря проверены command tests.

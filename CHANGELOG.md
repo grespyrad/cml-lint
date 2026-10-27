@@ -8,6 +8,12 @@
 - Готовые pre-commit hooks с автоисправлением и подробное руководство настройки.
 - Точные golden tests, Java/Xtext reference, conformance corpus и fuzz regression.
 
+## 0.3.0
+
+- CLI и bench/lex переведены на `github.com/grespyrad/go-cml v0.3.0`.
+- Импорты используют имя пакета `cml` без алиаса; обновлены ссылки и проверки.
+- Версия CLI обновлена до 0.3.0.
+
 ## 0.2.3
 
 - CLI на CMLGo v0.2.3: validate, lint, format и PlantUML.

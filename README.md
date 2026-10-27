@@ -1,8 +1,8 @@
 # cml-lint
 
 Линтер и форматтер Context Mapper Language 6.12.0 на Go. Импортирует отдельную
-[CMLGo](https://github.com/grespyrad/CMLGo) `v0.2.3`; parser и typed model
-находятся в библиотеке. Runtime не требует Java. Поддерживает исходный CML и расширения CMLGo v0.2.0: инварианты, Unicode names
+[go-cml](https://github.com/grespyrad/go-cml) `v0.3.0`; parser и typed model
+находятся в библиотеке. Runtime не требует Java. Поддерживает исходный CML и расширения библиотеки: инварианты, Unicode names
 и необязательные DDD aliases. Репозиторий основан на etalon-go-library.
 
 ## Использование
@@ -23,7 +23,7 @@ bin/cm generate -g plantuml -i model.cml -o diagrams
 Exit codes: 0 — проверка успешна; 1 — ошибка модели/IO или необходимое
 форматирование; 2 — неверные аргументы. `format` проверяет синтаксис;
 `lint` также проверяет семантику. `--fix` форматирует синтаксически корректный
-файл и затем снова проверяет семантику. Импорты проверяет CMLGo.
+файл и затем снова проверяет семантику. Импорты проверяет go-cml.
 
 [Руководство по форматированию и pre-commit](docs/FORMATTING.md): установка,
 пакетная обработка, рекурсивный обход каталогов и автоматическое форматирование
@@ -65,7 +65,7 @@ architecture positive/negative probes, vulnerability scan и portable instructio
 checker. Formatter tests проверяют точный pretty layout, независимость от входных отступов,
 диалекты, CLI, сохранение токенов и идемпотентность на 55 официальных примерах
 и синтаксически валидной части conformance corpus. Reference models описывают синтетическую интеграцию сервиса.
-CMLGo semantic parity проверена на 273 upstream test snippets полным Xtext
+go-cml semantic parity проверена на 273 upstream test snippets полным Xtext
 validator, а не только load/getErrors старого CLI. Это проверка сохранённого corpus,
 не доказательство любого возможного CML-файла или идентичности всех диагностик.
 
@@ -83,7 +83,7 @@ bin/cm --original validate -i model.cml
 bin/cm --keywords keywords.json lint --fix -i model.cml
 ```
 
-DDD покрытие, синтаксис инвариантов и книжные источники: [CMLGo DDD analysis](https://github.com/grespyrad/CMLGo/blob/main/docs/DDD-COVERAGE.md).
+DDD покрытие, синтаксис инвариантов и книжные источники: [go-cml DDD analysis](https://github.com/grespyrad/go-cml/blob/main/docs/DDD-COVERAGE.md).
 
 [Парные примеры интеграции ExternalService](examples/README.md): русские и
 английские имена, четыре области инвариантов, описание ограничений и команды CLI.
@@ -91,4 +91,4 @@ DDD покрытие, синтаксис инвариантов и книжны�
 [Модель эталонного Go-сервиса](examples/README.md#модель-эталонного-go-сервиса):
 контексты, агрегаты, repositories, состояния, операции и application flows;
 варианты с исходными и обобщёнными именами. Выбранные правила проверяются
-нейтральной Go-реализацией в CMLGo examples/reference.
+нейтральной Go-реализацией в go-cml examples/reference.

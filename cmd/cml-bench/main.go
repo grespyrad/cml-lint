@@ -12,7 +12,7 @@ import (
 	"runtime/pprof"
 	"time"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 var errIterations = errors.New("iterations must be positive")

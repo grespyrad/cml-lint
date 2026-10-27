@@ -10,7 +10,7 @@ import (
 	"slices"
 	"strings"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 func formatBatch(inputs []string, options formatOptions, out, errOut io.Writer, dialect cml.Dialect) int {

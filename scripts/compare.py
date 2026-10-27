@@ -31,7 +31,7 @@ for file in ['testdata/reference/service-before.cml','testdata/reference/service
  for language in engines:
   samples=[r['ns_per_op'] for r in results if r['file']==file and r['language']==language]
   summary.append(dict(file=file,language=language,median_ns=statistics.median(samples),min_ns=min(samples),max_ns=max(samples)))
-data=dict(cmlgo_version=subprocess.check_output(['go','list','-m','-f','{{.Version}}','github.com/grespyrad/CMLGo'],cwd=root,env={**env,'GOWORK':'off'},text=True).strip(),grammar_mode='Original CML 6.12.0',date='2026-10-05',platform=platform.platform(),machine=platform.machine(),gomaxprocs=1,rounds=args.rounds,iterations=args.iterations,summary=summary,raw=results,startup=startup)
+data=dict(go_cml_version=subprocess.check_output(['go','list','-m','-f','{{.Version}}','github.com/grespyrad/go-cml'],cwd=root,env={**env,'GOWORK':'off'},text=True).strip(),grammar_mode='Original CML 6.12.0',date='2026-10-05',platform=platform.platform(),machine=platform.machine(),gomaxprocs=1,rounds=args.rounds,iterations=args.iterations,summary=summary,raw=results,startup=startup)
 (root/'bench/results/comparison.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
 for s in summary:print(s)
 for lang in engines:print('startup',lang,statistics.median([s['ns'] for s in startup if s['language']==lang])/1e6,'ms')

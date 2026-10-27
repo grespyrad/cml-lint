@@ -87,11 +87,11 @@ x/tools 0.29.0 падает при анализе некоторых конст�
 
 ## Специфика cml-lint
 
-Production использует CMLGo v0.2.3, без локального replace. Parser и grammar
+Production использует go-cml v0.3.0, без локального replace. Parser и grammar
 в CLI не копируются; bench snapshot обслуживает только исследование. Complexity
 исключения ограничены CLI dispatch и grammar layout форматтера; token conservation
 и idempotency проверяются corpus tests. OpenSpec dev-only advisory braces описана
-в CMLGo; закреплённая версия tooling не входит в Go runtime.
+в go-cml; закреплённая версия tooling не входит в Go runtime.
 
 ## Проверки текущей поставки
 

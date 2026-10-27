@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strings"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // Source форматирует синтаксически валидный CML; строки и комментарии сохраняются.
